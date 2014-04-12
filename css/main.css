@@ -1,0 +1,12 @@
+#top {
+	background-image: url("../img/top.png");
+}
+
+#name-input {
+	height: 170px;
+	padding: 0;
+	text-align: center;
+	width: 100%;
+	border: 0;
+    background: transparent;
+}

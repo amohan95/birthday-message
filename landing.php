@@ -18,9 +18,9 @@
 </head>
 <body>
 	<div id="top"><div id="name"></div> <div id="b-day">happy birthday!</div></div>
-	<div id="line-outline"></div>
+	<div class="line-outline"></div>
 	<div id="line"></div>
-	<div id="line-outline"></div>
+	<div class="line-outline"></div>
 	<div id="below"><div id="message-title">Message:</div><div id="message"></div></div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

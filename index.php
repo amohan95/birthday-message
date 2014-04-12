@@ -13,23 +13,25 @@
 	<meta name="viewport" content="width=device-width">
 	<link href="css/vendor/bootstrap.min.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
+	<link href="css/landing.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
 	<link rel="stylesheet" media="screen" type="text/css" href="colorpicker/css/colorpicker.css" />
 	<style>
-		body{
-			padding-top:50px;
-			padding-bottom:20px;
-			padding-left:20px;
-			padding-right:20px;
-		}
 	</style>
 </head>
 <body>
 	<div class="form-group">
-		<label class="col-lg-4 control-label required" for="name-input">Name</label>
-			<div class="col-lg-8">
-				<input class="form-control" type="text" id="name-input" placeholder="Who do you want to wish?"/>
+		<div id="top">
+			<div id="name">
+				<input type="text" id="name-input" placeholder="Name"/>
 			</div>
-		<label class="col-l-4 control-label required" for="message-input">Message</label>
+			<div id="b-day">happy birthday!</div>
+		</div>
+	<div class="line-outline"></div>
+	<div id="line"></div>
+	<div class="line-outline"></div>
+
+		<div id="below"><div id="message-title">Message:</div><div id="message"></div></div>
 			<div class="col-lg-g">
 				<textarea class="form-control" id="message-input" placeholder="What do you want to say?"></textarea>
 			</div>
