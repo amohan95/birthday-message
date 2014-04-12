@@ -76,3 +76,9 @@ body{
 	font-family: StarsFromOurEyes;
 	src: url("../fonts/StarsFromOurEyes.ttf");
 }
+
+.particle {
+	height:3px;
+    position:absolute;
+    width:3px;
+}

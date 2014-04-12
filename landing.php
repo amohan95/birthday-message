@@ -8,20 +8,19 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Birthday Message!</title>
+	<title></title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width">
 	<link href="css/vendor/bootstrap.min.css" rel="stylesheet">
 	<link href="css/landing.css" rel="stylesheet">
-	<style>
-	</style>
+	<style></style>
 </head>
 <body>
-	<div id="top"><div id="name">Shelly</div> <div id="b-day">happy birthday</div></div>
+	<div id="top"><div id="name"></div> <div id="b-day">happy birthday!</div></div>
 	<div id="line-outline"></div>
 	<div id="line"></div>
 	<div id="line-outline"></div>
-	<div id="below"><div id="message">This is a birthday message! sdkljflskjdfalfjsdfj</div></div>
+	<div id="below"><div id="message"></div></div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>

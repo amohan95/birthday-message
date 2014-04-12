@@ -9,11 +9,11 @@ if(isset($_GET['id'])){
 	if($result){
 		echo(json_encode(array("success"=>true, "content" => $result)));
 	} else {
-		echo(json_encode(array("success"=>false)));
+		http_response_code(400);
 	}
 } 
 else{
-	echo(json_encode(array("success"=>false, "test"=>$_GET)));
+	http_response_code(400);
 }
 
 ?>
