@@ -6,7 +6,7 @@ body{
 #top {
 	margin: 0;
 	padding: 0;
-	height: 300px;
+	height: 350px;
 	width: 100%;
 	text-align: center;
 	vertical-align: center;
@@ -18,12 +18,12 @@ body{
 	font-size: 140px;
 	margin: 0;
 	padding: 0;
-	padding-top: 20px;
+	padding-top: 40px;
 	z-index: 1;
 	position: relative;
 	width: 100%;
 	color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 #b-day {
@@ -34,7 +34,7 @@ body{
 	position: absolute;
 	z-index: 2;
 	left: 0;
-	top: 160px;
+	top: 180px;
 	width: 100%;
 	color: black;
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
@@ -58,13 +58,22 @@ body{
 
 #below {
 	padding: 10px;
-	padding-top: 50px;
+	padding-top: 15px;
 }
 
 #message {
 	font-family: helvetica;
-	font-size: 25px;
+	font-size: 20px;
 	text-align: center;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#message-title {
+	text-align: center;
+	font-family: helvetica;
+	font-size: 25px;
+	padding-bottom: 5px;
 }
 
 @font-face {
