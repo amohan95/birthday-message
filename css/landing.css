@@ -1,0 +1,78 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+#top {
+	margin: 0;
+	padding: 0;
+	height: 300px;
+	width: 100%;
+	text-align: center;
+	vertical-align: center;
+
+}
+
+#name {
+	font-family: KGAllOfMe;
+	font-size: 140px;
+	margin: 0;
+	padding: 0;
+	padding-top: 20px;
+	z-index: 1;
+	position: relative;
+	width: 100%;
+	color: white;
+}
+
+#b-day {
+	margin: 0;
+	padding: 0;
+	font-family: StarsFromOurEyes;
+	font-size: 70px;
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	top: 160px;
+	width: 100%;
+	color: black;
+
+
+}
+
+#line {
+	margin: 0;
+	padding: 0;
+	height: 6px;
+	width: 100%;
+	background-color: black;
+}
+
+#line-outline {
+	margin: 0;
+	padding: 0;
+	height: 2px;
+	width: 100%;
+	background-color: white;
+}
+
+#below {
+	padding: 10px;
+	padding-top: 50px;
+}
+
+#message {
+	font-family: helvetica;
+	font-size: 25px;
+	text-align: center;
+}
+
+@font-face {
+	font-family: KGAllOfMe;
+	src: url("../fonts/KGAllOfMe.ttf");
+}
+
+@font-face {
+	font-family: StarsFromOurEyes;
+	src: url("../fonts/StarsFromOurEyes.ttf");
+}
