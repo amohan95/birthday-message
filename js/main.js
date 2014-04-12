@@ -14,7 +14,7 @@ $(document).ready(function(){
 			}
 		});
 	});
-
+	$('#top').css('background-color', '#0000ff');
 	$('#colorSelector').ColorPicker({
 		color: '#0000ff',
 		onShow: function (colpkr) {
@@ -27,6 +27,7 @@ $(document).ready(function(){
 		},
 		onChange: function (hsb, hex, rgb) {
 			$('#colorSelector div').css('backgroundColor', '#' + hex);
+			$('#top').css('background-color', '#' + hex);
 		}
 	});
 });

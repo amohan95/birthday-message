@@ -55,8 +55,8 @@ function explode(element) {
 	multicolor = Math.floor(Math.random()*10);
 
 	emitter.css({
-		left: Math.floor((400-2)*Math.random()) + 3 + 'px',
-		top: Math.floor((100-2)*Math.random()) + 3 + 'px',
+		left: Math.floor((window.innerWidth-15)*Math.random()) + 3 + 'px',
+		top: Math.floor((window.innerHeight-15)*Math.random()) + 3 + 'px',
 		background: colors[Math.floor(Math.random()*colors.length)]
 	});
 	$('.particle').remove();
