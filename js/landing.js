@@ -4,7 +4,7 @@ $(document).ready(function(){
 		url: './ajax/get_info.php',
 		data: {'id' : getUrlParameter('id')},
 		success: function(data){
-			
+
 		},
 		error: function(){
 			
