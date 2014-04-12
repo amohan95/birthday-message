@@ -69,10 +69,10 @@ body{
 
 @font-face {
 	font-family: KGAllOfMe;
-	src: url("fonts/KGAllOfMe.ttf");
+	src: url("../fonts/KGAllOfMe.ttf");
 }
 
 @font-face {
 	font-family: StarsFromOurEyes;
-	src: url("fonts/StarsFromOurEyes.ttf");
+	src: url("../fonts/StarsFromOurEyes.ttf");
 }

@@ -8,7 +8,7 @@ if(isset($_POST['name']) && isset($_POST['message']) && isset($_POST['color']) &
 	$statement = $db->prepare('INSERT INTO lookup VALUES(:hashId, :name, :message, :color, :isbday)');
 	$name = $_POST['name'];
 	$message = $_POST['message'];
-	$hashId = hash('adler32', randomString(8));
+	$hashId = randomString(8);
 	$statement->bindValue(':hashId', $hashId, SQLITE3_TEXT);
 	$statement->bindValue(':name', $name, SQLITE3_TEXT);
 	$statement->bindValue(':message', $message, SQLITE3_TEXT);

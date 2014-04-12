@@ -5,6 +5,8 @@ $(document).ready(function(){
 		data: {'id' : getUrlParameter('id')},
 		success: function(data){
 			$('#top').css('background-color', data['content']['color']);
+			$('#name').text(data['content']['name']);
+			$('#message').text(data['content']['message']);
 		},
 		error: function(){
 			
