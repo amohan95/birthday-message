@@ -23,9 +23,9 @@
 	<div class="form-group">
 		<div id="top">
 			<div id="name">
-				<input type="text" id="name-input" placeholder="Name"/>
+				<input type="text" id="name-input" placeholder="Type Name Here"/>
 			</div>
-			<div id="b-day">happy birthday!</div>
+			<div id="b-day">happy birfsdfsdthday!</div>
 		</div>
 	<div class="line-outline"></div>
 	<div id="line"></div>
@@ -33,12 +33,12 @@
 
 		<div id="below"><div id="message-title">Message:</div><div id="message"></div></div>
 			<div class="col-lg-g">
-				<textarea class="form-control" id="message-input" placeholder="What do you want to say?"></textarea>
+				<textarea id="message" id="message-input" rows="2" placeholder="Type your message text here!"></textarea>
 			</div>
-		<button id="create-birthday">Create Birthday Party!!!!!!!!!!</button>
-	</div>
-	<div id="colorSelector">
-		<div id="color-input" style="background-color: #0000ff;height:30px;width:30px;border:2px solid #cccccc;"></div>
+		<div id="colorSelector">
+			<div id="color-container"><div id="color-input"></div></div>
+		</div>
+		<div id="birthday-container"><button id="create-birthday">Create Birthday Party!!!!!!!!!!</button></div>
 	</div>
 	<div id="destination-url"></div>
 </body>
