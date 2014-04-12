@@ -8,13 +8,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Birthday Message!</title>
+	<title></title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width">
 	<link href="css/vendor/bootstrap.min.css" rel="stylesheet">
 	<link href="css/landing.css" rel="stylesheet">
-	<style>
-	</style>
+	<style></style>
 </head>
 <body>
 	<div id="top"><div id="name"></div> <div id="b-day">happy birthday!</div></div>

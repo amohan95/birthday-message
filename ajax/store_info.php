@@ -18,7 +18,6 @@ if(isset($_POST['name']) && isset($_POST['message']) && isset($_POST['color']) &
 	echo(json_encode(array("success"=>true, "id"=>$hashId)));
 }
 else{
-	echo(json_encode(array("success"=>false)));
 	http_response_code(400);
 }
 ?>

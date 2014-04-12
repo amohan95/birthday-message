@@ -2,7 +2,6 @@ $(document).ready(function(){
 	$('#create-birthday').click(function(){
 		var name = $('#name-input').val();
 		var message = $('#message-input').val();
-		if(!name.length) return;
 		$.ajax({
 			type: 'POST',
 			url: './ajax/store_info.php',
