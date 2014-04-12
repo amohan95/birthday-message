@@ -12,8 +12,7 @@
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width">
 	<link href="css/vendor/bootstrap.min.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
-	<link rel="stylesheet" media="screen" type="text/css" href="colorpicker/css/colorpicker.css" />
+	<link href="css/landing.css" rel="stylesheet">
 	<style>
 		body{
 			padding-top:50px;
@@ -24,25 +23,10 @@
 	</style>
 </head>
 <body>
-	<div class="form-group">
-		<label class="col-lg-4 control-label required" for="name-input">Name</label>
-			<div class="col-lg-8">
-				<input class="form-control" type="text" id="name-input" placeholder="Who do you want to wish?"/>
-			</div>
-		<label class="col-l-4 control-label required" for="message-input">Message</label>
-			<div class="col-lg-g">
-				<textarea class="form-control" id="message-input" placeholder="What do you want to say?"></textarea>
-			</div>
-		<button id="create-birthday">Create Birthday Party!!!!!!!!!!</button>
-	</div>
-	<div id="colorSelector">
-		<div id="color-input" style="background-color: #0000ff;height:30px;width:30px;border:2px solid #cccccc;"></div>
-	</div>
-	<div id="destination-url"></div>
+
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 <script src="js/vendor/bootstrap.min.js"></script>
-<script type="text/javascript" src="colorpicker/js/colorpicker.js"></script>
-<script src="js/main.js"></script>
+<script src="js/landing.js"></script>
 </html>
