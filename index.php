@@ -36,7 +36,7 @@
 				<textarea id="message" id="message-input" rows="2" placeholder="Type your message text here!"></textarea>
 			</div>
 		<div id="colorSelector">
-			<div id="color-container"><div id="color-input"></div></div>
+			<div id="color-input"></div>
 		</div>
 		<div id="birthday-container"><button id="create-birthday">Create Birthday Party!!!!!!!!!!</button></div>
 	</div>
