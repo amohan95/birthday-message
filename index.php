@@ -11,9 +11,7 @@
 	<title>Birthday Message!</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width">
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/vendor/bootstrap.min.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 	<style>
 		body{
@@ -25,9 +23,19 @@
 	</style>
 </head>
 <body>
-
+	<div class="form-group">
+		<label class="col-lg-4 control-label required" for="name-input">Name</label>
+			<div class="col-lg-8">
+				<input class="form-control" type="text" id="name-input" placeholder="Who do you want to wish?"/>
+			</div>
+		<label class="col-l-4 control-label required" for="message-input">Message</label>
+			<div class="col-lg-g">
+				<input class="form-control" type="textarea" id="message-input" placeholder="What do you want to say?"/>
+			</div>
+	</div>
 </body>
 <script src="js/main.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+<script src="js/vendor/bootstrap.min.js"></script>
 </html>
