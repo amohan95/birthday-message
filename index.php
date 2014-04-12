@@ -33,7 +33,7 @@
 
 		<div id="below"><div id="message-title">Message:</div><div id="message"></div></div>
 			<div class="col-lg-g">
-				<textarea id="message" id="message-input" rows="2" placeholder="Type your message text here!"></textarea>
+				<textarea id="message-input" rows="2" placeholder="Type your message text here!"></textarea>
 			</div>
 		<div id="colorSelector">
 			<div id="color-input"></div>
