@@ -4,7 +4,7 @@ $(document).ready(function(){
 		url: './ajax/get_info.php',
 		data: {'id' : getUrlParameter('id')},
 		success: function(data){
-			
+			$('#top').css('background-color', data['content']['color']);
 		},
 		error: function(){
 			
