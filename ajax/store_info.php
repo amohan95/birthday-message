@@ -1,5 +1,5 @@
 <?php
-require_once(__DIR__ . '../config.php');
+require_once(__DIR__ . '/../config.php');
 
 if(isset($_POST['name']) && isset($_POST['message']) && isset($_POST['color']) && isset($_POST['isbday'])){
 	header('Content-type: application/json');
@@ -17,6 +17,7 @@ if(isset($_POST['name']) && isset($_POST['message']) && isset($_POST['color']) &
 	echo(json_encode(array("success"=>true, "hashId"=>$hashId)));
 }
 else{
+	echo(json_encode(array("success"=>false, "worth"=>false)));
 	http_response_code(400);
 }
 ?>
