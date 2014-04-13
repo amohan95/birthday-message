@@ -9,7 +9,7 @@ $(document).ready(function(){
 				data: {'name' : name, 'message' : message, 'color' : '#' + $('.colorpicker_hex input').val() , 'isbday' : checkMessage(message)},
 				success: function(data){
 					$("#linkModal").modal("show");
-					$('#destination-url').html('<a href=' + getDestinationURL(data.id) + '>localhost' + getDestinationURL(data.id) + '</a>');
+					$('#destination-url').html('<a target="_blank" href=' + getDestinationURL(data.id) + '>' + document.URL.substring(0, document.URL.length - 1) + getDestinationURL(data.id) + '</a>');
 				},
 				error: function(){
 
