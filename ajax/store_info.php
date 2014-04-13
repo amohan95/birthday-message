@@ -7,7 +7,7 @@ if(isset($_POST['name']) && isset($_POST['message']) && isset($_POST['color']) &
 	header('Content-type: application/json');
 	$statement = $db->prepare('INSERT INTO lookup VALUES(:hashId, :name, :message, :color, :isbday)');
 	$name = $_POST['name'];
-	$message = $_POST['message'];
+	$message = nl2br($_POST['message']);
 	$hashId = randomString(8);
 	$statement->bindValue(':hashId', $hashId, SQLITE3_TEXT);
 	$statement->bindValue(':name', $name, SQLITE3_TEXT);

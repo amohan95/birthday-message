@@ -7,10 +7,16 @@ $(document).ready(function(){
 			$('#top').css('background-color', data['content']['color']);
 			document.title = 'Happy Birthday ' + data['content']['name']; 
 			$('#name').text(data['content']['name']);
-			$('#message').text(data['content']['message']);
-			
-			$('body').click(function() {
-				explode($('body'));
+			$('#message').html(data['content']['message']);
+
+			$('#b-day').fadeIn('slow', function(){
+				$('#name').fadeIn('slow', function(){
+					$('#message-title').fadeIn('slow', function(){
+						$('#message').fadeIn('slow', function(){
+							explode($('body'));
+						});
+					});
+				});
 			});
 		},
 		error: function(){
@@ -20,6 +26,10 @@ $(document).ready(function(){
 			$('#b-day').text('happy birthday?')
 			$('#message').text('Apparently, we can\'t seem to find this ID! We\'re either sorry, or you\'re messing around with something!');
 		}
+	});
+	
+	$('body').click(function() {
+		explode($('body'));
 	});
 
 });
@@ -47,12 +57,12 @@ $.fn.duplicate = function(count, cloneEvents) {
 
 function explode(element) {
 
-	colors = [  '#ffffff', '#ff0000', '#00ff00', '#ffff00',
+	var colors = [  '#ffffff', '#ff0000', '#00ff00', '#ffff00',
 	'#00ffff', '#ff00ff', '#ffee00' ]
 
-	emitter = $('<div></div>').addClass('particle');
+	var emitter = $('<div></div>').addClass('particle');
 
-	multicolor = Math.floor(Math.random()*10);
+	var multicolor = Math.floor(Math.random()*10);
 
 	emitter.css({
 		left: Math.floor((window.innerWidth-15)*Math.random()) + 3 + 'px',
@@ -63,8 +73,8 @@ function explode(element) {
 	element.append(emitter.duplicate(50));
 
 	$('.particle', element).each(function() {
-		xoffset = Math.floor((10- -11)*Math.random()) + -10;
-		yoffset = Math.floor((10- -11)*Math.random()) + -10;
+		var xoffset = Math.floor((10- -11)*Math.random()) + -10;
+		var yoffset = Math.floor((10- -11)*Math.random()) + -10;
 		if(multicolor > 5) $(this).css('background', colors[Math.floor(Math.random()*colors.length)]);
 		$(this).animate({
 			"left": "+="+ xoffset*10 +"px",

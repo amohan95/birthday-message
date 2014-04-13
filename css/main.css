@@ -8,7 +8,7 @@
 }
 
 #color-input {
-	background-color: #0000ff;
+	background-color: #ffae00;
 	height: 30px;
 	width: 300px;
 	border: 2px solid #cccccc;
@@ -33,4 +33,20 @@
 	padding: 0;
 	border: 0;
 	background: transparent;
+}
+
+#colorSelector {
+	margin:0 auto;
+	width:50%;
+}
+
+#destination-url {
+	margin:0 auto;
+	text-align:center;
+	border: 2px solid #cccccc;
+	width: 30%;
+}
+
+#url-description {
+	
 }

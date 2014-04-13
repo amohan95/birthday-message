@@ -25,7 +25,7 @@
 			<div id="name">
 				<input type="text" id="name-input" placeholder="Type Name Here"/>
 			</div>
-			<div id="b-day">happy birfsdfsdthday!</div>
+			<div id="b-day">happy birthday!</div>
 		</div>
 	<div class="line-outline"></div>
 	<div id="line"></div>
@@ -38,9 +38,11 @@
 		<div id="colorSelector">
 			<div id="color-input"></div>
 		</div>
-		<div id="birthday-container"><button id="create-birthday">Create Birthday Party!!!!!!!!!!</button></div>
+		<div id="birthday-container"><div id="create-birthday" class="btn btn-lg btn-default">Create Birthday Party!</div></div>
 	</div>
-	<div id="destination-url"></div>
+	<div id="destination-url">
+		<div id="url-description"></div>
+	</div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>

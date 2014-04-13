@@ -2,21 +2,25 @@ $(document).ready(function(){
 	$('#create-birthday').click(function(){
 		var name = $('#name-input').val();
 		var message = $('#message-input').val();
-		$.ajax({
-			type: 'POST',
-			url: './ajax/store_info.php',
-			data: {'name' : name, 'message' : message, 'color' : '#' + $('.colorpicker_hex input').val() , 'isbday' : 1},
-			success: function(data){
-				$('#destination-url').html(getDestinationURL(data.id));
-			},
-			error: function(){
+		if(name.length != 0 || message.length != 0){
+			$.ajax({
+				type: 'POST',
+				url: './ajax/store_info.php',
+				data: {'name' : name, 'message' : message, 'color' : '#' + $('.colorpicker_hex input').val() , 'isbday' : 1},
+				success: function(data){
+					$('#destination-url').html('<div id="url-description">Send them this URL!</div>' +
+											   '<a href=' + getDestinationURL(data.id) + '>localhost'
+											   + getDestinationURL(data.id) + '</a>');
+				},
+				error: function(){
 
-			}
-		});
+				}
+			});
+		}
 	});
-	$('#top').css('background-color', '#0000ff');
+	$('#top').css('background-color', '#ffae00');
 	$('#colorSelector').ColorPicker({
-		color: '#0000ff',
+		color: '#ffae00',
 		onShow: function (colpkr) {
 			$(colpkr).fadeIn(500);
 			return false;

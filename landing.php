@@ -16,11 +16,14 @@
 	<style></style>
 </head>
 <body>
-	<div id="top"><div id="name"></div> <div id="b-day">happy birthday!</div></div>
+	<div id="top">
+		<div id="name" style="display:none;"></div>
+		<div id="b-day" style="display:none;">happy birthday!</div>
+	</div>
 	<div class="line-outline"></div>
 	<div id="line"></div>
 	<div class="line-outline"></div>
-	<div id="below"><div id="message-title">Message:</div><div id="message"></div></div>
+	<div id="below"><div id="message-title" style="display:none;">Message:</div><div id="message" style="display:none;"></div></div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
