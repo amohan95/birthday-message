@@ -33,13 +33,13 @@ $(document).ready(function(){
 			$('#colorSelector div').css('backgroundColor', '#' + hex);
 			$('#top').css('background-color', '#' + hex);
 			$('#create-birthday').css('border-color', '#' +  hex);
-
 		}
 	});
 
 	$('#copy-url').click(function(){
 		copyToClipboard($('#destination-url a').text());
 	});
+
 });
 
 function getDestinationURL(id){
