@@ -4,11 +4,19 @@ $(document).ready(function(){
 		url: './ajax/get_info.php',
 		data: {'id' : getUrlParameter('id')},
 		success: function(data){
-			$('#top').css('background-color', data['content']['color']);
-			document.title = 'Happy Birthday ' + data['content']['name']; 
-			$('#name').text(data['content']['name']);
-			$('#message').html(data['content']['message']);
-
+			if(data['content']['isbday']){
+				$('#top').css('background-color', data['content']['color']);
+				document.title = 'Happy Birthday ' + data['content']['name']; 
+				$('#name').text(data['content']['name']);
+				$('#message').html(data['content']['message']);
+			}
+			else {
+				$('#top').css('background-color', 'red');
+				document.title = 'Fuck You ' + data['content']['name']; 
+				$('#name').text(data['content']['name']);
+				$('#message').html(data['content']['message']);
+				$('#b-day').text('fuck you!');	
+			}
 			$('#b-day').fadeIn('slow', function(){
 				$('#name').fadeIn('slow', function(){
 					$('#message-title').fadeIn('slow', function(){

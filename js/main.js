@@ -3,19 +3,36 @@ $(document).ready(function(){
 		var name = $('#name-input').val();
 		var message = $('#message-input').val();
 		if(name.length != 0 || message.length != 0){
-			$.ajax({
-				type: 'POST',
-				url: './ajax/store_info.php',
-				data: {'name' : name, 'message' : message, 'color' : '#' + $('.colorpicker_hex input').val() , 'isbday' : 1},
-				success: function(data){
-					$('#destination-url').html('<div id="url-description">Send them this URL!</div>' +
-											   '<a href=' + getDestinationURL(data.id) + '>localhost'
-											   + getDestinationURL(data.id) + '</a>');
-				},
-				error: function(){
+			if(checkMessage(message)){
+				$.ajax({
+					type: 'POST',
+					url: './ajax/store_info.php',
+					data: {'name' : name, 'message' : message, 'color' : '#' + $('.colorpicker_hex input').val() , 'isbday' : 1},
+					success: function(data){
+						$('#destination-url').html('<div id="url-description">Send them this URL!</div>' +
+												   '<a href=' + getDestinationURL(data.id) + '>localhost'
+												   + getDestinationURL(data.id) + '</a>');
+					},
+					error: function(){
 
-				}
-			});
+					}
+				});
+			}
+			else {
+				$.ajax({
+					type: 'POST',
+					url: './ajax/store_info.php',
+					data: {'name' : name, 'message' : message, 'color' : '#' + $('.colorpicker_hex input').val() , 'isbday' : 0},
+					success: function(data){
+						$('#destination-url').html('<div id="url-description">Send them this URL!</div>' +
+												   '<a href=' + getDestinationURL(data.id) + '>localhost'
+												   + getDestinationURL(data.id) + '</a>');
+					},
+					error: function(){
+
+					}
+				});
+			}
 		}
 	});
 	$('#top').css('background-color', '#ffae00');
@@ -38,4 +55,9 @@ $(document).ready(function(){
 
 function getDestinationURL(id){
 	return window.location.pathname + 'landing.php?id=' + id;
+}
+
+function checkMessage(message){
+	if(message.toLowerCase().search('fuck you') != -1) return false;
+	else return true;
 }
