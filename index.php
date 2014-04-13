@@ -26,6 +26,8 @@
 				<input type="text" id="name-input" placeholder="Type Name Here"/>
 			</div>
 			<div id="b-day">happy birthday!</div>
+				<div id="color-title">Color:</div>
+					<div id="colorSelector"><div id="color-input"></div></div>
 		</div>
 	<div class="line-outline"></div>
 	<div id="line"></div>
@@ -33,11 +35,9 @@
 
 		<div id="below"><div id="message-title">Message:</div><div id="message"></div></div>
 			<div class="col-lg-g">
-				<textarea id="message-input" rows="2" placeholder="Type your message text here!"></textarea>
+				<textarea id="message-input" rows="1" placeholder="Type your message text here!"></textarea>
 			</div>
-		<div id="colorSelector">
-			<div id="color-input"></div>
-		</div>
+
 		<div id="birthday-container"><button id="create-birthday">Create Birthday Party!!!!!!!!!!</button></div>
 	</div>
 	<div id="destination-url"></div>
