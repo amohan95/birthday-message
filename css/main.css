@@ -15,6 +15,10 @@
 	color:white;
 }
 
+.modal-footer {
+	text-align: center;
+}
+
 #top {
 	position: relative;
 }

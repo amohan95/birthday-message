@@ -30,8 +30,8 @@
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 					<h4 class="modal-title">Instructions</h4>
 				</div>
-				<div class="modal-body">
-					<p>Send a special friend a personalized webpage and message for their birthday in 5 easy steps!</p>
+				<div class="modal-body" style="font-size:18px;">
+					<p>Send a personalized webpage to a special friend for their birthday in 5 easy steps!</p>
 					<ol>
 						<li>Enter their name</li>
 						<li>Choose the color scheme</li>
