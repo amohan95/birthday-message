@@ -29,12 +29,11 @@
 	        <h4 class="modal-title">Send them this URL!</h4>
 	      </div>
 	      <div class="modal-body">
-	        	<div id="destination-url">
-					<div id="url-description"></div>
-				</div>
+	        	<div id="destination-url"></div>
 	      </div>
 	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <button type="button" id="copy-url" class="btn btn-default">Copy to Clipboard</button>
+	        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
 	      </div>
 	    </div><!-- /.modal-content -->
 	  </div><!-- /.modal-dialog -->
