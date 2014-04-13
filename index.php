@@ -37,7 +37,7 @@
 
 		<div id="below"><div id="message-title">Message:</div><div id="message"></div></div>
 			<div class="col-lg-g">
-				<textarea id="message-input" rows="3" placeholder="Type your message text here!"></textarea>
+				<textarea id="message-input" rows="2" placeholder="Type your message text here!"></textarea>
 			</div>
 		<div id="birthday-container"><div id="create-birthday" class="btn btn-lg btn-default">Create Birthday Party!</div></div>
 	</div>
