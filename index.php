@@ -22,43 +22,43 @@
 <body>
 	<!-- Modal -->
 	<div class="modal fade" id="linkModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-	        <h4 class="modal-title">Send them this URL!</h4>
-	      </div>
-	      <div class="modal-body">
-	        	<div id="destination-url"></div>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" id="copy-url" class="btn btn-default">Copy to Clipboard</button>
-	        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
-	      </div>
-	    </div><!-- /.modal-content -->
-	  </div><!-- /.modal-dialog -->
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title">Send them this URL!</h4>
+				</div>
+				<div class="modal-body">
+					<div id="destination-url"></div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" id="copy-url" class="btn btn-default">Copy to Clipboard</button>
+					<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
 	</div><!-- /.modal -->
 
 
 	<div class="form-group">
 		<div id="top">
 			<div id="name">
-				<input type="text" id="name-input" placeholder="Type Name Here"/>
+				<input type="text" id="name-input" placeholder="Type Name Here" autofocus/>
 			</div>
 			<div id="b-day">happy birthday!</div>
-				<div id="color-title">Select Color:</div>
-				<div id="colorSelector">
-					<div id="color-input"></div>
-				</div>
+			<div id="color-title">Select Color:</div>
+			<div id="colorSelector">
+				<div id="color-input"></div>
+			</div>
 		</div>
-	<div class="line-outline"></div>
-	<div id="line"></div>
-	<div class="line-outline"></div>
+		<div class="line-outline"></div>
+		<div id="line"></div>
+		<div class="line-outline"></div>
 
 		<div id="below"><div id="message-title">Message:</div><div id="message"></div></div>
-			<div class="col-lg-g">
-				<textarea id="message-input" rows="2" placeholder="Type your message text here!"></textarea>
-			</div>
+		<div class="col-lg-g">
+			<textarea id="message-input" rows="2" placeholder="Type your message text here!"></textarea>
+		</div>
 		<div id="birthday-container"><div id="create-birthday" class="btn btn-lg btn-default" data-toggle="modal">Create Birthday Party!</div></div>
 	</div>
 
