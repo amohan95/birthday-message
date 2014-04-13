@@ -45,8 +45,12 @@ function getDestinationURL(id){
 }
 
 function checkMessage(message){
-	if(message.toLowerCase().search('fuck you') != -1) return false;
-	else return true;
+	if(message.toLowerCase().search('fuck you') != -1) {
+		return 0;
+	}
+	else{
+		return 1;
+	}
 }
 
 function copyToClipboard(text) {
