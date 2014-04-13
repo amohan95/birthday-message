@@ -75,3 +75,8 @@
 .modal-title {
 	text-align: center;
 }
+
+#create-birthday {
+	border-width: 2px;
+	border-color: #ffae00;
+}
