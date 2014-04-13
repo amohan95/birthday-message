@@ -9,8 +9,8 @@ $(document).ready(function(){
 					url: './ajax/store_info.php',
 					data: {'name' : name, 'message' : message, 'color' : '#' + $('.colorpicker_hex input').val() , 'isbday' : 1},
 					success: function(data){
-						$('#destination-url').html('<div id="url-description">Send them this URL!</div>' +
-												   '<a href=' + getDestinationURL(data.id) + '>localhost'
+						$("#linkModal").modal("show");
+						$('#destination-url').html('<a href=' + getDestinationURL(data.id) + '>localhost'
 												   + getDestinationURL(data.id) + '</a>');
 					},
 					error: function(){

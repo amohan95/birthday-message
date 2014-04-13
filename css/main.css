@@ -32,7 +32,6 @@
     right: 0;
     margin-right: 70px;
     margin-bottom: 10px;
-
 }
 
 #birthday-container {
@@ -63,11 +62,16 @@
 #destination-url {
 	margin:0 auto;
 	text-align:center;
-	border: 2px solid #cccccc;
-	width: 30%;
+	font-size: 20px;
+	/*border: 2px solid #cccccc;
+	width: 30%;*/
 }
 
 #url-description {
 	margin:0 auto;
+	text-align: center;
+}
+
+.modal-title {
 	text-align: center;
 }
