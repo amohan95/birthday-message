@@ -43,7 +43,7 @@
 	<div class="form-group">
 		<div id="top">
 			<div id="name">
-				<input type="text" id="name-input" placeholder="Type Name Here" autofocus/>
+				<input type="text" id="name-input" placeholder="Type Name Here" autofocus maxlength="13"/>
 			</div>
 			<div id="b-day">happy birthday!</div>
 			<div id="color-title">Select Color:</div>

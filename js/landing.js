@@ -19,10 +19,8 @@ $(document).ready(function(){
 			}
 			$('#b-day').fadeIn('slow', function(){
 				$('#name').fadeIn('slow', function(){
-					$('#message-title').fadeIn('slow', function(){
-						$('#message').fadeIn('slow', function(){
-							explode($('body'));
-						});
+					$('#message').fadeIn('slow', function(){
+						explode($('body'));
 					});
 				});
 			});

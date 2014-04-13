@@ -23,7 +23,9 @@
 	<div class="line-outline"></div>
 	<div id="line"></div>
 	<div class="line-outline"></div>
-	<div id="below"><div id="message-title" style="display:none;">Message:</div><div id="message" style="display:none;"></div></div>
+	<div id="below">
+		<div id="message" style="display:none;"></div>
+	</div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
