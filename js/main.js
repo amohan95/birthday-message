@@ -1,4 +1,8 @@
 $(document).ready(function(){
+	$('#instructions').click(function(){
+		$('#instructionModal').modal('show');
+	});
+
 	$('#create-birthday').click(function(){
 		var name = $('#name-input').val();
 		var message = $('#message-input').val();

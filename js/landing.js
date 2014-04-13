@@ -8,7 +8,7 @@ $(document).ready(function(){
 				$('#top').css('background-color', data['content']['color']);
 				document.title = 'Happy Birthday ' + data['content']['name']; 
 				$('#name').text(data['content']['name']);
-				$('#message').html(data['content']['message']);
+				$('#message').html(data['content']['message'].replace('\\', ''));
 			}
 			else {
 				$('#top').css('background-color', 'red');
