@@ -1,3 +1,7 @@
+#top {
+	position: relative;
+}
+
 #name-input {
 	height: 170px;
 	padding: 0;
@@ -10,9 +14,24 @@
 #color-input {
 	background-color: #ffae00;
 	height: 30px;
-	width: 300px;
+	width: 50px;
 	border: 2px solid #cccccc;
 	margin: 0px auto;
+	position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+}
+
+#color-title {
+	font-size: 20px;
+	position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 70px;
+    margin-bottom: 10px;
 
 }
 
@@ -36,8 +55,9 @@
 }
 
 #colorSelector {
-	margin:0 auto;
-	width:50%;
+	position: absolute;
+	bottom: 0;
+	right: 0;
 }
 
 #destination-url {
@@ -48,5 +68,6 @@
 }
 
 #url-description {
-	
+	margin:0 auto;
+	text-align: center;
 }
