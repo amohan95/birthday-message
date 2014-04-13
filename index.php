@@ -25,7 +25,7 @@
 			<div id="name">
 				<input type="text" id="name-input" placeholder="Type Name Here"/>
 			</div>
-			<div id="b-day">happy birfsdfsdthday!</div>
+			<div id="b-day">happy birthday!</div>
 		</div>
 	<div class="line-outline"></div>
 	<div id="line"></div>
