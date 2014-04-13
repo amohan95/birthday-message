@@ -32,6 +32,8 @@ $(document).ready(function(){
 		onChange: function (hsb, hex, rgb) {
 			$('#colorSelector div').css('backgroundColor', '#' + hex);
 			$('#top').css('background-color', '#' + hex);
+			$('#create-birthday').css('border-color', '#' +  hex);
+
 		}
 	});
 
