@@ -3,38 +3,21 @@ $(document).ready(function(){
 		var name = $('#name-input').val();
 		var message = $('#message-input').val();
 		if(name.length != 0 || message.length != 0){
-			if(checkMessage(message)){
-				$.ajax({
-					type: 'POST',
-					url: './ajax/store_info.php',
-					data: {'name' : name, 'message' : message, 'color' : '#' + $('.colorpicker_hex input').val() , 'isbday' : 1},
-					success: function(data){
-						$("#linkModal").modal("show");
-						$('#destination-url').html('<a href=' + getDestinationURL(data.id) + '>localhost'
-												   + getDestinationURL(data.id) + '</a>');
-					},
-					error: function(){
+			$.ajax({
+				type: 'POST',
+				url: './ajax/store_info.php',
+				data: {'name' : name, 'message' : message, 'color' : '#' + $('.colorpicker_hex input').val() , 'isbday' : checkMessage(message)},
+				success: function(data){
+					$("#linkModal").modal("show");
+					$('#destination-url').html('<a href=' + getDestinationURL(data.id) + '>localhost' + getDestinationURL(data.id) + '</a>');
+				},
+				error: function(){
 
-					}
-				});
-			}
-			else {
-				$.ajax({
-					type: 'POST',
-					url: './ajax/store_info.php',
-					data: {'name' : name, 'message' : message, 'color' : '#' + $('.colorpicker_hex input').val() , 'isbday' : 0},
-					success: function(data){
-						$('#destination-url').html('<div id="url-description">Send them this URL!</div>' +
-												   '<a href=' + getDestinationURL(data.id) + '>localhost'
-												   + getDestinationURL(data.id) + '</a>');
-					},
-					error: function(){
-
-					}
-				});
-			}
+				}
+			});
 		}
 	});
+
 	$('#top').css('background-color', '#ffae00');
 	$('#colorSelector').ColorPicker({
 		color: '#ffae00',
@@ -51,6 +34,10 @@ $(document).ready(function(){
 			$('#top').css('background-color', '#' + hex);
 		}
 	});
+
+	$('#copy-url').click(function(){
+		copyToClipboard($('#destination-url a').text());
+	});
 });
 
 function getDestinationURL(id){
@@ -60,4 +47,8 @@ function getDestinationURL(id){
 function checkMessage(message){
 	if(message.toLowerCase().search('fuck you') != -1) return false;
 	else return true;
+}
+
+function copyToClipboard(text) {
+  window.prompt("Copy to clipboard: Ctrl+C, Enter", text);
 }
