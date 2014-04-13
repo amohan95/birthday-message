@@ -6,6 +6,9 @@
 <!--[if lte IE 8]><script language="javascript" type="text/javascript" src="excanvas.min.js"></script><![endif]--> 
 <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
+	<link rel="icon" 
+      type="img/candle.png" 
+      href="img/candle.png" />
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title></title>
